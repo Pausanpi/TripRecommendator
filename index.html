@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripRecommendator</title>
+	<link rel="stylesheet" href="index.css">
+	<link rel="icon" href="assets/logo.svg">
+</head>
+<body>
+    <div class="container">
+        <div class="text-content">
+            <p>Hey, Welcome to</p>
+            <h1>TripRecommendator!</h1>
+        </div>
+        <button class="index-btn" id="index-btn">→</button>
+		<p class="p-copy">&copy; 2024 Travel Assistant. All rights reserved.</p>
+    </div>
+
+	<script>
+		document.getElementById('index-btn')?.addEventListener('click', () => {
+			window.location.href = 'http://localhost:5500/layout.html';
+		});
+	</script>
+</body>
+</html>

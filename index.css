@@ -1,0 +1,77 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	background-image: url('../assets/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+}
+
+.text-content {
+	text-align: center;
+	color: white;
+	z-index: 2;
+	margin-top: 2rem;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-style: italic;
+	margin: 0;
+}
+
+p {
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+	color: white;
+}
+
+.p-copy {
+	font-size: 11px;
+}
+
+.index-btn {
+	background-color: rgba(255, 255, 255, 0.3);
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	color: white;
+	width: 60px;
+	height: 60px;
+	border-radius: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	cursor: pointer;
+	z-index: 2;
+	margin-top: 70%;
+	transition: background-color 0.3s;
+}
+
+.index-btn:hover {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	background-color: rgba(0, 0, 0, 0.029);
+}

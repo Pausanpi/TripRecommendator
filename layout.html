@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="icon" href="assets/logo.svg">
+</head>
+<body>
+    <header class="header">
+        <img src="assets/logo.svg" alt="logo" class="app-icon">
+		<h1>TripRecommendator</h1>
+    </header>
+    <main>
+        <section id="input-section">
+			<form class="search-container">
+				<input class="search-input" type="text" id="travel-input" placeholder="e.g., beaches, mountains, Europe" />
+			</form>
+            
+            <button id="suggest-button" class="suggest-btn">Suggest Destinations</button>
+        </section>
+        <section id="output-section" class="output-section">
+            <h4>Suggested Destinations</h4>
+            <ul id="suggestions-list"></ul>
+        </section>
+        <section id="map-section" class="map-section">
+            <h4>Interactive Map</h4>
+            <div id="map"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Travel Assistant. All rights reserved.</p>
+    </footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
