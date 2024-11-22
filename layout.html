@@ -12,16 +12,37 @@
 </head>
 <body>
     <header class="header">
-        <img src="assets/logo.svg" alt="logo" class="logo">
+        <img src="assets/logob.svg" alt="logo" class="logo">
         <h1 class="header-title">TripRecommendator</h1>
     </header>
     <main class="main">
-        <section id="input-section" class="input-section">
+        <!-- <section id="input-section" class="input-section">
             <h2 class="section-heading">Plan Your Next Adventure</h2>
             <form class="search-container">
                 <input class="search-input" type="text" id="travel-input" placeholder="e.g., beaches, mountains, Europe">
                 <button id="suggest-button" class="search-btn">Suggest</button>
             </form>
+        </section> -->
+
+		<section class="hero">
+            <div class="container">
+                <h2>Discover Your Next Adventure</h2>
+                <p class="subtitle">Tell us what you're looking for and let us guide you to the perfect destination</p>
+                <div class="search-wrapper">
+                    <input 
+                        type="text" 
+                        id="travel-input" 
+                        placeholder="e.g., beaches, mountains, Europe"
+                        aria-label="Search destinations"
+                    >
+                    <button id="suggest-button" class="primary-button">
+                        <span>Explore</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 18l6-6-6-6"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </section>
         <section id="output-section" class="output-section">
             <h2 class="section-heading">Suggested Destinations</h2>
